@@ -7,9 +7,52 @@ function closeModal() {
         cancion.play();
     }, 1000);
 }
-
+function closeV(){
+    document.getElementById('videoP').style.display="none";
+}
+function video1(){
+    document.getElementById('videoP').style.display="block";
+    document.getElementById('video').src = "videoBahrein.mp4";
+}
+function video2(){
+    document.getElementById('videoP').style.display="block";
+    document.getElementById('video').src = "videoSau";
+}
+function video3(){
+    document.getElementById('videoP').style.display="block";
+    document.getElementById('video').src = "videoAustralia.mp4";
+}
+function video4(){
+    document.getElementById('videoP').style.display="block";
+    document.getElementById('video').src = "videoSuzuka.mp4";
+}
+function video5(){
+    document.getElementById('videoP').style.display="block";
+    document.getElementById('video').src = "videoChi.mp4";
+}
+function video6(){
+    document.getElementById('videoP').style.display="block";
+    document.getElementById('video').src = "videoMiami.mp4";
+}
+function video7(){
+    document.getElementById('videoP').style.display="block";
+    document.getElementById('video').src = "videoImola.mp4";
+}
+function video8(){
+    document.getElementById('videoP').style.display="block";
+    document.getElementById('video').src = "videoMonaco.mp4";
+}
+function video9(){
+    document.getElementById('videoP').style.display="block";
+    document.getElementById('video').src = "videoCanada.mp4";
+}
+function video10(){
+    document.getElementById('videoP').style.display="block";
+    document.getElementById('video').src = "videoEs.mp4";
+}
 document.addEventListener('DOMContentLoaded', function () {
     var map = L.map('conte2', {
+        zoomControl: false,
         scrollWheelZoom: false
     }).setView([41.35011261487338, 2.107239216026741], 4);
     
@@ -17,12 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
-
-    // document.getElementById("volver").addEventListener("click", function() {
-    //     var latlng = [41.56954803220597, 2.2578215177397722];
-    //     var zoomLevel = 4;
-    //     map.flyTo(latlng, zoomLevel);
-    // });
 
     document.getElementById("Montmelo").addEventListener("click", function() {
         var latlng = [41.56954803220597, 2.2578215177397722];
@@ -104,6 +141,66 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById("bel").addEventListener("click", function() {
         var latlng = [50.44488629989654, 5.965424363259445];
+        var zoomLevel = 16;
+        map.flyTo(latlng, zoomLevel);
+    });
+
+    document.getElementById("hol").addEventListener("click", function() {
+        var latlng = [52.391694748217276, 4.540923192192603];
+        var zoomLevel = 16;
+        map.flyTo(latlng, zoomLevel);
+    });
+
+    document.getElementById("ita").addEventListener("click", function() {
+        var latlng = [45.62001153339045, 9.281635760440983];
+        var zoomLevel = 16;
+        map.flyTo(latlng, zoomLevel);
+    });
+
+    document.getElementById("azer").addEventListener("click", function() {
+        var latlng = [40.37305702429387, 49.853160138191335];
+        var zoomLevel = 16;
+        map.flyTo(latlng, zoomLevel);
+    });
+
+    document.getElementById("sin").addEventListener("click", function() {
+        var latlng = [1.2916216925699102, 103.85780403983544];
+        var zoomLevel = 16;
+        map.flyTo(latlng, zoomLevel);
+    });
+
+    document.getElementById("aus").addEventListener("click", function() {
+        var latlng = [30.13895352314892, -97.6352498921524];
+        var zoomLevel = 16;
+        map.flyTo(latlng, zoomLevel);
+    });
+
+    document.getElementById("mex").addEventListener("click", function() {
+        var latlng = [19.405825991160803, -99.09259813478148];
+        var zoomLevel = 16;
+        map.flyTo(latlng, zoomLevel);
+    });
+
+    document.getElementById("bra").addEventListener("click", function() {
+        var latlng = [-23.704603800442396, -46.69925146263777];
+        var zoomLevel = 16;
+        map.flyTo(latlng, zoomLevel);
+    });
+
+    document.getElementById("veg").addEventListener("click", function() {
+        var latlng = [36.17573844042981, -115.14336599287846];
+        var zoomLevel = 16;
+        map.flyTo(latlng, zoomLevel);
+    });
+
+    document.getElementById("cat").addEventListener("click", function() {
+        var latlng = [25.488707615828865, 51.450564168119456];
+        var zoomLevel = 16;
+        map.flyTo(latlng, zoomLevel);
+    });
+
+    document.getElementById("abu").addEventListener("click", function() {
+        var latlng = [24.470375398752246, 54.60542014489257];
         var zoomLevel = 16;
         map.flyTo(latlng, zoomLevel);
     });
