@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego F1</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="portada" onclick="closeModal()" id="modal"></div>
+    <div class="contenedor-horizontal">
+        <div class="conte1">
+            <label>Juego de F1</label>
+            <br>
+            <div class="tabla">
+                <table>
+                <tr id="bahrain">
+                    <td><img src="bahrain.webp" class="bandera"></td>
+                    <td>Bahrein</td>
+                </tr>
+                <tr id="yeda">
+                    <td><img src="saudi.webp" class="bandera"></td>
+                    <td>Yeda</td>                    
+                </tr>
+                <tr id="melburne">
+                    <td><img src="australia.svg" class="bandera"></td>
+                    <td>Albert Park</td>                    
+                </tr>
+                <tr id="japon">
+                    <td><img src="japon.png" class="bandera"></td>
+                    <td>Suzuka</td>                    
+                </tr>
+                <tr id="china">
+                    <td><img src="china.png" class="bandera"></td>
+                    <td>Shanghay</td>                    
+                </tr>
+                <tr id="miami">
+                    <td><img src="usa.png" class="bandera"></td>
+                    <td>Miami</td>
+                </tr>
+                <tr id="imola">
+                    <td><img src="ita.png" class="bandera"></td>
+                    <td>Imola</td>
+                </tr>
+                <tr id="monaco">
+                    <td><img src="monaco.png" class="bandera"></td>
+                    <td>Montecarlo</td>
+                </tr>
+                <tr id="canada">
+                    <td><img src="canada.png" class="bandera"></td>
+                    <td>Gilles Villenueve</td>
+                </tr>
+                <tr id="Montmelo">
+                    <td><img src="españa.jpg" class="bandera"></td>
+                    <td>Montmeló</td>
+                </tr>
+                <tr id="austria">
+                    <td><img src="austria.png" class="bandera"></td>
+                    <td>Red Bull Ring</td>
+                </tr>
+                <tr id="bre">
+                    <td><img src="bre.png" class="bandera"></td>
+                    <td>Silverstone</td>
+                </tr>
+                <tr id="hun">
+                    <td><img src="hun.jpg" class="bandera"></td>
+                    <td>Hungaroring</td>
+                </tr>
+                <tr id="bel">
+                    <td><img src="bel.png" class="bandera"></td>
+                    <td>Spa-Francorchamps</td>
+                </tr>
+                </table>
+            </div>
+        </div>
+        <div id="conte2">
+    
+        </div>
+    </div>
+</body>
+<audio id="cancion" src="cancionP.mp3"></audio>
+</html>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="main.js"></script>
